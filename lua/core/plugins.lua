@@ -13,6 +13,7 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
+	use 'mbbill/undotree'
 	use 'nvim-lualine/lualine.nvim'
 	use { 'nvim-tree/nvim-tree.lua', requires = { 'nvim-tree/nvim-web-devicons', }, }
 	use 'nvim-treesitter/nvim-treesitter'
@@ -22,7 +23,7 @@ return require('packer').startup(function(use)
 		"williamboman/mason-lspconfig.nvim",
 		"neovim/nvim-lspconfig",
 	}
-	-- use { "catppuccin/nvim", as = "catppuccin" }
+	use { "catppuccin/nvim", as = "catppuccin" }
 	use { "hrsh7th/nvim-cmp" }
 	use { "hrsh7th/cmp-nvim-lsp" }
 	use { "L3MON4D3/LuaSnip" }
@@ -101,7 +102,7 @@ return require('packer').startup(function(use)
 	use {
 		"ellisonleao/gruvbox.nvim"
 	}
-	
+
 	if packer_bootstrap then
 		require('packer').sync()
 	end

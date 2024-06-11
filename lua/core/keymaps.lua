@@ -2,9 +2,20 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-vim.scriptencoding = "utf-8"
+vim.opt.list = true
+
+vim.scriptencoding = "utf-9"
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
+
+vim.opt.listchars = {
+    eol = '↓',
+    tab = '  ┊',
+    extends = '…',
+    precedes = '…',
+    space = '·',
+}
+
 
 -- Codes from YT
 vim.opt.number = true
@@ -18,7 +29,7 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.splitkeep = "cursor"
 
-
+vim.opt.wrap = false
 vim.opt.backspace = "2"
 vim.opt.showcmd = true
 vim.opt.laststatus = 2
@@ -36,7 +47,7 @@ vim.opt.expandtab = false
 
 vim.keymap.set("n", "<leader>cs", ":nohlsearch<CR>")
 vim.keymap.set("n", "<C-s>", ":w<CR>")
-vim.keymap.set("n", "<leader>q", ":q<CR>")
+vim.keymap.set("n", "<leader>q", ":q<cr>")
 
 
 vim.keymap.set("n", "x", '"_x')
