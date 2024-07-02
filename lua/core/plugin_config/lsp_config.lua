@@ -1,18 +1,23 @@
-require("mason").setup()
-require("mason-lspconfig").setup({
-	ensure_installed = { "lua_ls" }
-})
+local lsp_zero = require('lsp-zero')
 
-local on_attach = function(_, _)
+lsp_zero.on_attach(function(client, bufnr)
 	vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, {})
 	vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {})
 
 	vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
-end
 
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
+	lsp_zero.default_keymaps({buffer = bufnr})
+end)
 
-require("lspconfig").lua_ls.setup {
-	on_attach = on_attach,
-	capabilities = capabilities
-}
+require('mason').setup({})
+require('mason-lspconfig').setup({
+	ensure_installed = {"lua_ls", "clangd"},
+	handlers = {
+		function(server_name)
+			require('lspconfig')[server_name].setup({})
+		end,
+	},
+})
+
+require('lspconfig').lua_ls.setup({})
+require('lspconfig').clangd.setup({})
