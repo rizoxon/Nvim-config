@@ -16,7 +16,7 @@ vim.opt.listchars = {
 
 -- Codes from YT
 vim.opt.number = true
-vim.opt.relativenumber = true
+vim.opt.relativenumber = false
 vim.opt.title = true
 vim.opt.backup = false
 vim.opt.cmdheight = 0
