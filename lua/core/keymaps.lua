@@ -13,7 +13,7 @@ vim.opt.fileencoding = "utf-8"
 
 vim.opt.listchars = {
 	-- eol = '↓',
-	tab = '   ',
+	tab = '  ┊',
 	space = '·',
 }
 
