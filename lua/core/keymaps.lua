@@ -4,14 +4,17 @@ vim.g.maplocalleader = " "
 
 vim.opt.list = true
 
+-- retab
+vim.keymap.set("n", "<leader>t", ":set noexpandtab | retab!<CR>")
+
 vim.scriptencoding = "utf-9"
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
 
 vim.opt.listchars = {
-    -- eol = '↓',
-    tab = '   ',
-    space = '·',
+	-- eol = '↓',
+	tab = '   ',
+	space = '·',
 }
 
 -- Codes from YT
