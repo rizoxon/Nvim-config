@@ -109,6 +109,13 @@ return require('packer').startup(function(use)
 	use {
 		"ellisonleao/gruvbox.nvim"
 	}
+	use({
+		"neanias/everforest-nvim",
+		-- Optional; default configuration will be used if setup isn't called.
+		config = function()
+			require("everforest").setup()
+		end,
+	})
 
 	if packer_bootstrap then
 		require('packer').sync()
