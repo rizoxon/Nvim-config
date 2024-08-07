@@ -12,19 +12,24 @@ vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
 
 vim.opt.listchars = {
-	-- eol = '↓',
-	tab = '  ┊',
 	space = '·',
 }
 
+vim.opt.list = true
+vim.opt.listchars:append "tab:│ "
+vim.opt.expandtab = false
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+
+
 -- Codes from YT
 vim.opt.number = true
-vim.opt.relativenumber = true
+vim.opt.relativenumber = false
 vim.opt.title = true
 vim.opt.backup = false
 vim.opt.cmdheight = 0
 vim.opt.laststatus = 0
-vim.opt.scrolloff = 15
+-- vim.opt.scrolloff = 15
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.splitkeep = "cursor"

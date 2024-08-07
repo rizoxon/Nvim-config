@@ -102,21 +102,14 @@ return require('packer').startup(function(use)
 	}
 	use {
 		"lukas-reineke/indent-blankline.nvim",
-		config = function()
-			require("ibl").setup()
-		end
 	}
 	use {
 		"ellisonleao/gruvbox.nvim"
-	}
+		}
 	use({
 		"neanias/everforest-nvim",
-		-- Optional; default configuration will be used if setup isn't called.
-		config = function()
-			require("everforest").setup()
-		end,
 	})
-
+	use {"navarasu/onedark.nvim"}
 	if packer_bootstrap then
 		require('packer').sync()
 	end
