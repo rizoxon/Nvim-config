@@ -100,16 +100,11 @@ return require('packer').startup(function(use)
 			)
 		end
 	}
-	use {
-		"lukas-reineke/indent-blankline.nvim",
-	}
-	use {
-		"ellisonleao/gruvbox.nvim"
-		}
-	use({
-		"neanias/everforest-nvim",
-	})
+	use { "lukas-reineke/indent-blankline.nvim", }
+	use { "ellisonleao/gruvbox.nvim" }
+	use({ "neanias/everforest-nvim", })
 	use {"navarasu/onedark.nvim"}
+	use({ 'rose-pine/neovim', as = 'rose-pine' })
 	if packer_bootstrap then
 		require('packer').sync()
 	end
