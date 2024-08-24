@@ -4,6 +4,8 @@ vim.g.maplocalleader = " "
 
 vim.opt.list = true
 
+vim.opt.guicursor = ""
+
 -- retab
 vim.keymap.set("n", "<leader>t", ":set noexpandtab | retab!<CR>")
 
@@ -25,7 +27,7 @@ vim.opt.shiftwidth = 4
 
 -- Codes from YT
 vim.opt.number = true
-vim.opt.relativenumber = false
+vim.opt.relativenumber = true
 vim.opt.title = true
 vim.opt.backup = false
 vim.opt.cmdheight = 0
