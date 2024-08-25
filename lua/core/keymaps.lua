@@ -2,6 +2,9 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+-- Disable swapfile
+vim.opt.swapfile = false
+
 vim.opt.list = true
 
 vim.opt.guicursor = ""
