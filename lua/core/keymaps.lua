@@ -22,7 +22,7 @@ vim.opt.listchars = {
 
 vim.opt.list = true
 vim.opt.listchars:append "tab:  "
--- vim.opt.listchars:append "tab:│ "
+vim.opt.listchars:append "tab:│ "
 vim.opt.expandtab = false
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
@@ -35,7 +35,7 @@ vim.opt.title = true
 vim.opt.backup = false
 vim.opt.cmdheight = 0
 vim.opt.laststatus = 0
-vim.opt.scrolloff = 15
+vim.opt.scrolloff = 20
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.splitkeep = "cursor"
@@ -45,7 +45,7 @@ vim.opt.backspace = "2"
 vim.opt.showcmd = true
 vim.opt.laststatus = 2
 vim.opt.autowrite = true
-vim.opt.cursorline = false
+vim.opt.cursorline = true
 vim.opt.autoread = true
 
 -- tab and spaces
@@ -56,7 +56,7 @@ vim.opt.shiftround = true
 -- if true, uses spaces instead of tabs
 vim.opt.expandtab = false
 
-vim.keymap.set("n", "<leader>cs", ":nohlsearch<CR>")
+vim.keymap.set("n", "<leader>n", ":nohlsearch<CR>")
 -- vim.keymap.set("n", "<C-s>", ":w<CR>")
 -- vim.keymap.set("n", "<leader>q", ":q<cr>")
 
