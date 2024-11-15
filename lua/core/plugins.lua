@@ -105,6 +105,7 @@ return require('packer').startup(function(use)
 	use({ "neanias/everforest-nvim", })
 	use {"navarasu/onedark.nvim"}
 	use({ 'rose-pine/neovim', as = 'rose-pine' })
+	use 'lewis6991/gitsigns.nvim'
 	if packer_bootstrap then
 		require('packer').sync()
 	end

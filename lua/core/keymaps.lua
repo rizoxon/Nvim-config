@@ -7,7 +7,7 @@ vim.opt.swapfile = false
 
 vim.opt.list = true
 
-vim.opt.guicursor = ""
+vim.opt.guicursor = "n-v-c:block,i-ci-ve:ver25,r-cr-o:hor20,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor"
 
 -- retab
 vim.keymap.set("n", "<leader>t", ":set noexpandtab | retab!<CR>")
@@ -22,7 +22,7 @@ vim.opt.listchars = {
 
 vim.opt.list = true
 vim.opt.listchars:append "tab:  "
-vim.opt.listchars:append "tab:│ "
+-- vim.opt.listchars:append "tab:│ "
 vim.opt.expandtab = false
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
@@ -56,7 +56,7 @@ vim.opt.shiftround = true
 -- if true, uses spaces instead of tabs
 vim.opt.expandtab = false
 
-vim.keymap.set("n", "<leader>n", ":nohlsearch<CR>")
+vim.keymap.set("n", "<leader>cs", ":nohlsearch<CR>")
 -- vim.keymap.set("n", "<C-s>", ":w<CR>")
 -- vim.keymap.set("n", "<leader>q", ":q<cr>")
 
@@ -73,10 +73,10 @@ vim.keymap.set("n", "ss", ":split<Return>", opts)
 vim.keymap.set("n", "sv", ":vsplit<Return>", opts)
 
 -- Move window
-vim.keymap.set("n", "sh", "<C-w>h")
-vim.keymap.set("n", "sk", "<C-w>k")
-vim.keymap.set("n", "sj", "<C-w>j")
-vim.keymap.set("n", "sl", "<C-w>l")
+vim.keymap.set("n", "<C-h>", "<C-w>h")
+vim.keymap.set("n", "<C-k>", "<C-w>k")
+vim.keymap.set("n", "<C-j>", "<C-w>j")
+vim.keymap.set("n", "<C-l>", "<C-w>l")
 
 vim.keymap.set("n", "=", [[<cmd>vertical resize +5<cr>]]) -- make the window biger vertically
 vim.keymap.set("n", "-", [[<cmd>vertical resize -5<cr>]]) -- make the window smaller vertically
@@ -85,4 +85,3 @@ vim.keymap.set("n", "_", [[<cmd>horizontal resize -2<cr>]]) -- make the window s
 
 -- Very useful remap
 vim.keymap.set("v", "<leader>p", "\"_dP")
-
