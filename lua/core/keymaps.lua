@@ -7,8 +7,6 @@ vim.opt.swapfile = false
 
 vim.opt.list = true
 
-vim.opt.guicursor = "n-v-c:block,i-ci-ve:ver25,r-cr-o:hor20,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor"
-
 -- retab
 vim.keymap.set("n", "<leader>t", ":set noexpandtab | retab!<CR>")
 
