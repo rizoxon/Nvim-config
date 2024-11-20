@@ -7,3 +7,7 @@ require("core.plugin_config.auto_complete")
 require("core.plugin_config.harpoon")
 require("core.plugin_config.fold")
 require("core.plugin_config.undotree")
+require("core.plugin_config.gitsigns")
+
+-- Intend blankline
+require("ibl").setup({ scope = { enabled = false } })
