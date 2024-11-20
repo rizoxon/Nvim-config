@@ -1,32 +1,21 @@
 ---@diagnostic disable: undefined-global
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-
--- Disable swapfile
 vim.opt.swapfile = false
-
 vim.opt.list = true
-
--- retab
-vim.keymap.set("n", "<leader>t", ":set noexpandtab | retab!<CR>")
-
+vim.opt.clipboard = "unnamedplus"
+vim.opt.guicursor = "n-v-i-c:block-Cursor"
 vim.scriptencoding = "utf-9"
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
-
 vim.opt.listchars = {
 	space = '·',
 }
-
 vim.opt.list = true
-vim.opt.listchars:append "tab:  "
--- vim.opt.listchars:append "tab:│ "
+vim.opt.listchars:append "tab:│ "
 vim.opt.expandtab = false
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
-
-
--- Codes from YT
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.title = true
@@ -50,21 +39,11 @@ vim.opt.autoread = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.shiftround = true
-
--- if true, uses spaces instead of tabs
 vim.opt.expandtab = false
 
 vim.keymap.set("n", "<leader>cs", ":nohlsearch<CR>")
--- vim.keymap.set("n", "<C-s>", ":w<CR>")
--- vim.keymap.set("n", "<leader>q", ":q<cr>")
-
-
 vim.keymap.set("n", "x", '"_x')
-
-
--- Select all
 vim.keymap.set("n", "<C-a>", "gg<S-v>G")
-
 
 -- Split window
 vim.keymap.set("n", "ss", ":split<Return>", opts)
@@ -83,3 +62,9 @@ vim.keymap.set("n", "_", [[<cmd>horizontal resize -2<cr>]]) -- make the window s
 
 -- Very useful remap
 vim.keymap.set("v", "<leader>p", "\"_dP")
+
+-- retabab
+vim.keymap.set("n", "<leader>t", ":set noexpandtab | retab!<CR>")
+
+vim.keymap.set("i", "<C-c>", "<Esc>")
+
