@@ -1,4 +1,11 @@
----@diagnostic disable: undefined-global
+-- -@diagnostic disable: undefined-global
+vim.fn.sign_define('DiagnosticSignError', { text = '', texthl = 'DiagnosticSignError' })
+vim.fn.sign_define('DiagnosticSignWarn', { text = '', texthl = 'DiagnosticSignWarn' })
+vim.fn.sign_define('DiagnosticSignInfo', { text = '', texthl = 'DiagnosticSignInfo' })
+vim.fn.sign_define('DiagnosticSignHint', { text = '', texthl = 'DiagnosticSignHint' })
+
+vim.opt.colorcolumn = "80"
+
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 vim.opt.swapfile = false
@@ -12,7 +19,7 @@ vim.opt.listchars = {
 	space = '·',
 }
 vim.opt.list = true
-vim.opt.listchars:append "tab:│ "
+vim.opt.listchars:append "tab:  "
 vim.opt.expandtab = false
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
@@ -20,7 +27,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.title = true
 vim.opt.backup = false
-vim.opt.cmdheight = 1
+vim.opt.cmdheight = 0
 vim.opt.laststatus = 0
 vim.opt.scrolloff = 20
 vim.opt.splitbelow = true
@@ -32,7 +39,7 @@ vim.opt.backspace = "2"
 vim.opt.showcmd = true
 vim.opt.laststatus = 2
 vim.opt.autowrite = true
-vim.opt.cursorline = true
+vim.opt.cursorline = false
 vim.opt.autoread = true
 
 -- tab and spaces
@@ -42,7 +49,6 @@ vim.opt.shiftround = true
 vim.opt.expandtab = false
 
 vim.keymap.set("n", "<leader>cs", ":nohlsearch<CR>")
-vim.keymap.set("n", "x", '"_x')
 vim.keymap.set("n", "<C-a>", "gg<S-v>G")
 
 -- Split window
