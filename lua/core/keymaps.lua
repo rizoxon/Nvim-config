@@ -4,7 +4,7 @@ vim.fn.sign_define('DiagnosticSignWarn', { text = '', texthl = 'DiagnosticSig
 vim.fn.sign_define('DiagnosticSignInfo', { text = '', texthl = 'DiagnosticSignInfo' })
 vim.fn.sign_define('DiagnosticSignHint', { text = '', texthl = 'DiagnosticSignHint' })
 
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "100"
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
@@ -19,7 +19,7 @@ vim.opt.listchars = {
 	space = '·',
 }
 vim.opt.list = true
-vim.opt.listchars:append "tab:  "
+vim.opt.listchars:append "tab:| "
 vim.opt.expandtab = false
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
