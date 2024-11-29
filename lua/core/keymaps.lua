@@ -17,9 +17,10 @@ vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
 vim.opt.listchars = {
 	space = '·',
+	tab = "│ "
 }
 vim.opt.list = true
-vim.opt.listchars:append "tab:| "
+-- vim.opt.listchars:append "tab:| "
 vim.opt.expandtab = false
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
