@@ -20,7 +20,6 @@ vim.opt.listchars = {
 	tab = "│ "
 }
 vim.opt.list = true
--- vim.opt.listchars:append "tab:| "
 vim.opt.expandtab = false
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
@@ -40,7 +39,7 @@ vim.opt.backspace = "2"
 vim.opt.showcmd = true
 vim.opt.laststatus = 2
 vim.opt.autowrite = true
-vim.opt.cursorline = false
+vim.opt.cursorline = true
 vim.opt.autoread = true
 
 -- tab and spaces

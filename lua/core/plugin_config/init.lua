@@ -10,4 +10,4 @@ require("core.plugin_config.undotree")
 require("core.plugin_config.gitsigns")
 
 -- Intend blankline
-require("ibl").setup({ scope = { enabled = true } })
+require("ibl").setup({ scope = { enabled = false } })

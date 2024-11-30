@@ -106,6 +106,7 @@ return require('packer').startup(function(use)
 	use({ 'rose-pine/neovim', as = 'rose-pine' })
 	use 'lewis6991/gitsigns.nvim'
 	use "lukas-reineke/indent-blankline.nvim"
+	use "ccxnu/rosebones"
 	if packer_bootstrap then
 		require('packer').sync()
 	end
