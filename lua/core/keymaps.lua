@@ -12,6 +12,7 @@ vim.opt.swapfile = false
 vim.opt.list = true
 vim.opt.clipboard = "unnamedplus"
 vim.opt.guicursor = "n-v-i-c:block-Cursor"
+vim.cmd('highlight Cursor guifg=#FFFFFF guibg=#E0E0E0')
 vim.scriptencoding = "utf-9"
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
@@ -39,7 +40,7 @@ vim.opt.backspace = "2"
 vim.opt.showcmd = true
 vim.opt.laststatus = 2
 vim.opt.autowrite = true
-vim.opt.cursorline = true
+vim.opt.cursorline = false
 vim.opt.autoread = true
 
 -- tab and spaces
