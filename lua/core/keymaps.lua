@@ -11,8 +11,11 @@ vim.g.maplocalleader = " "
 vim.opt.swapfile = false
 vim.opt.list = true
 vim.opt.clipboard = "unnamedplus"
-vim.opt.guicursor = "n-v-i-c:block-Cursor"
-vim.cmd('highlight Cursor guifg=#FFFFFF guibg=#E0E0E0')
+-- vim.opt.guicursor = "n-v-i-c:block-Cursor"
+
+-- vim.cmd('highlight Cursor guifg=#FFFFFF guibg=#E0E0E0')
+vim.opt.guicursor = "n:block-blinkwait1000-blinkon500-blinkoff500";
+
 vim.scriptencoding = "utf-9"
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"

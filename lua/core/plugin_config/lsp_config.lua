@@ -25,26 +25,3 @@ require('mason-lspconfig').setup({
 		end,
 	},
 })
-
--- Custom restart function
-local function restart_lsp()
-	vim.lsp.stop_client(vim.lsp.get_active_clients())
-	vim.cmd('edit')
-end
-
-vim.api.nvim_create_user_command('LspRestartCustom', restart_lsp, {})
-
-
-local lspconfig = require('lspconfig')
-
-lspconfig.eslint.setup({
-    root_dir = lspconfig.util.root_pattern('.git', 'package.json'),
-    -- Add other configuration options here
-})
-
-require('lspconfig').ast_grep.setup({
-    root_dir = lspconfig.util.root_pattern('sgconfig.yml'),
-    single_file_support = false
-})
-
-
