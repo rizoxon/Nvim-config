@@ -16,7 +16,7 @@ require('lualine').setup {
 		lualine_c = {
 		{
 			'branch',
-			icon = '🌿',
+			icon = "",
 			color = { fg = '#8FBCBB', gui = 'bold' },
 		}
 		},
