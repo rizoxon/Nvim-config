@@ -4,16 +4,19 @@ vim.fn.sign_define('DiagnosticSignWarn', { text = '', texthl = 'DiagnosticSig
 vim.fn.sign_define('DiagnosticSignInfo', { text = '', texthl = 'DiagnosticSignInfo' })
 vim.fn.sign_define('DiagnosticSignHint', { text = '', texthl = 'DiagnosticSignHint' })
 
-vim.opt.colorcolumn = "100"
--- hide this -> ~
-vim.cmd('highlight EndOfBuffer guifg=#14151A guibg=bg')
-
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 vim.opt.swapfile = false
 vim.opt.list = true
 vim.opt.clipboard = "unnamedplus"
--- vim.opt.guicursor = "n-v-i-c:block-Cursor"
+
+vim.opt.colorcolumn = "100"
+-- hide this -> ~
+vim.cmd('highlight EndOfBuffer guifg=#14151A guibg=bg')
+
+-- Move selected lines up or down in visual mode
+vim.keymap.set('v', '<C-S-j>', ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
+vim.keymap.set('v', '<C-S-k>', ":m '<-2<CR>gv=gv", { noremap = true, silent = true })
 
 -- vim.cmd('highlight Cursor guifg=#FFFFFF guibg=#E0E0E0')
 vim.opt.guicursor = "n:block-blinkwait1000-blinkon500-blinkoff500";
