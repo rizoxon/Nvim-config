@@ -18,16 +18,18 @@ vim.cmd('highlight EndOfBuffer guifg=#14151A guibg=bg')
 vim.keymap.set('v', '<C-S-j>', ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
 vim.keymap.set('v', '<C-S-k>', ":m '<-2<CR>gv=gv", { noremap = true, silent = true })
 
--- vim.cmd('highlight Cursor guifg=#FFFFFF guibg=#E0E0E0')
 vim.opt.guicursor = "n:block-blinkwait1000-blinkon500-blinkoff500";
 
 vim.scriptencoding = "utf-9"
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
+
 vim.opt.listchars = {
 	space = '·',
 	tab = "│ "
 }
+vim.cmd([[ highlight Whitespace guifg=#333333 guibg=NONE ]])
+
 vim.opt.list = true
 vim.opt.expandtab = false
 vim.opt.tabstop = 4
