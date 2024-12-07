@@ -10,7 +10,7 @@ vim.opt.swapfile = false
 vim.opt.list = true
 vim.opt.clipboard = "unnamedplus"
 
-vim.opt.colorcolumn = "100"
+vim.opt.colorcolumn = "0"
 -- hide this -> ~
 vim.cmd('highlight EndOfBuffer guifg=#14151A guibg=bg')
 
