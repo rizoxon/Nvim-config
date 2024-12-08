@@ -9,8 +9,5 @@ require("core.plugin_config.fold")
 require("core.plugin_config.undotree")
 require("core.plugin_config.gitsigns")
 
--- Live server
-require('live-server').setup()
-
 -- Intend blankline
 require("ibl").setup({ scope = { enabled = false } })

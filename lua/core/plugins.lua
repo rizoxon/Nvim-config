@@ -111,7 +111,9 @@ return require('packer').startup(function(use)
 		'barrett-ruth/live-server.nvim',
 		build = 'pnpm add -g live-server',
 		cmd = { 'LiveServerStart', 'LiveServerStop' },
-		config = require('live-server').setup()
+		config = function()
+			require('live-server').setup()
+		end
 	}
 	if packer_bootstrap then
 		require('packer').sync()
