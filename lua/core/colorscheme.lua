@@ -138,5 +138,4 @@ require("rose-pine").setup({
 		h6 = "foam",
 	},
 })
-
 vim.cmd("colorscheme rose-pine")
