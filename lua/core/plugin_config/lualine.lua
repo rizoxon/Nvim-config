@@ -1,23 +1,37 @@
 require('lualine').setup {
 	options = {
 		icons_enabled = true,
-		theme = 'auto',
+		theme = {
+			normal = {
+				a = { bg = 'none' },
+				b = { bg = 'none' },
+				c = { bg = 'none' },
+			},
+			insert = { a = { bg = 'none' }, },
+			visual = { a = { bg = 'none' }, },
+			replace = { a = { bg = 'none' }, },
+			inactive = {
+				a = { bg = 'none' },
+				b = { bg = 'none' },
+				c = { bg = 'none' },
+			},
+		},
 		component_separators = { left = '', right = ''},
 		section_separators = { left = '', right = ''},
 	},
 	sections = {
-		lualine_a = {},
+		lualine_a = { 'mode' },
 		lualine_b = {
 			{
 				'filename',
-				path = 1,
+				path = 2,
 			}
 		},
 		lualine_c = {
 			{
 				'branch',
 				icon = "",
-				color = { fg = '#8FBCBB' },
+				color = { fg = '#9FBCBB' },
 			}
 		},
 		lualine_x = {'filetype', 'diagnostics'},
