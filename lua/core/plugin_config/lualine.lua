@@ -6,22 +6,22 @@ require('lualine').setup {
 		section_separators = { left = '', right = ''},
 	},
 	sections = {
-		lualine_a = {'mode'},
+		lualine_a = {},
 		lualine_b = {
-		{
-			'filename',
-			path = 1,
-		}
+			{
+				'filename',
+				path = 1,
+			}
 		},
 		lualine_c = {
-		{
-			'branch',
-			icon = "",
-			color = { fg = '#8FBCBB', gui = 'bold' },
-		}
+			{
+				'branch',
+				icon = "",
+				color = { fg = '#8FBCBB' },
+			}
 		},
 		lualine_x = {'filetype', 'diagnostics'},
-		lualine_y = {'progress'},
-		lualine_z = {'location'}
+		lualine_y = {'location'},
+		lualine_z = {}
 	}
 }

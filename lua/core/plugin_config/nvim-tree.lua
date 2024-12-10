@@ -31,3 +31,5 @@ require("nvim-tree").setup({
 
 -- Keybinding to toggle file tree
 vim.keymap.set('n', '<leader>e', ':NvimTreeFindFileToggle<CR>')
+
+vim.api.nvim_set_hl(0, "NvimTreeIndentMarker", { fg = "#353845" })

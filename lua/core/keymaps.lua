@@ -29,6 +29,10 @@ vim.opt.listchars = {
 	tab = "│ "
 }
 vim.cmd([[ highlight Whitespace guifg=#333333 guibg=NONE ]])
+vim.cmd([[ highlight Tab guifg=#ffffff guibg=NONE ]])
+
+-- Folded line italic
+vim.cmd ([[ hi Folded gui=italic ]])
 
 vim.opt.list = true
 vim.opt.expandtab = false
@@ -50,7 +54,7 @@ vim.opt.backspace = "2"
 vim.opt.showcmd = true
 vim.opt.laststatus = 2
 vim.opt.autowrite = true
-vim.opt.cursorline = true
+vim.opt.cursorline = false
 vim.opt.autoread = true
 
 -- tab and spaces
