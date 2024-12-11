@@ -24,7 +24,7 @@ require('lualine').setup {
 		lualine_b = {
 			{
 				'filename',
-				path = 2,
+				path = 1,
 			}
 		},
 		lualine_c = {

@@ -113,6 +113,7 @@ return require('packer').startup(function(use)
 		end
 	}
 	use "rebelot/kanagawa.nvim"
+	use ({ 'projekt0n/github-nvim-theme' })
 	if packer_bootstrap then
 		require('packer').sync()
 	end
