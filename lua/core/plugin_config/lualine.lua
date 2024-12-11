@@ -23,15 +23,15 @@ require('lualine').setup {
 		lualine_a = { 'mode' },
 		lualine_b = {
 			{
-				'filename',
-				path = 1,
+				'branch',
+				icon = "",
+				color = { fg = '#9FBCBB' },
 			}
 		},
 		lualine_c = {
 			{
-				'branch',
-				icon = "",
-				color = { fg = '#9FBCBB' },
+				'filename',
+				path = 3,
 			}
 		},
 		lualine_x = {'filetype'},
