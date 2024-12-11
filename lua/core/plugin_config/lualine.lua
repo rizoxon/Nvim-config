@@ -34,7 +34,7 @@ require('lualine').setup {
 				color = { fg = '#9FBCBB' },
 			}
 		},
-		lualine_x = {'filetype', 'diagnostics'},
+		lualine_x = {'filetype'},
 		lualine_y = {'location'},
 		lualine_z = {}
 	}
