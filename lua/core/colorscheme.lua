@@ -108,8 +108,10 @@ require("rose-pine").setup({
 })
 
 -- Load rose-pine theme
--- vim.cmd("colorscheme rose-pine")
--- Default options
+vim.cmd("colorscheme rose-pine")
+
+-- Customize the CursorLine color
+vim.api.nvim_set_hl(0, "CursorLine", { bg = "#1A1B20" })
 
 require('github-theme').setup({
 	options = {
@@ -158,4 +160,4 @@ require('github-theme').setup({
 })
 
 -- setup must be called before loading
-vim.cmd('colorscheme github_dark_default')
+-- vim.cmd('colorscheme github_dark_default')
