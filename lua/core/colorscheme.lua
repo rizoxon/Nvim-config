@@ -122,8 +122,8 @@ require('github-theme').setup({
 		terminal_colors = true,    -- Set terminal colors (vim.g.terminal_color_*) used in `:terminal`
 		dim_inactive = false,	   -- Non focused panes set to alternative background
 		module_default = true,	   -- Default enable value for modules
-		styles = {				   -- Style to be applied to different syntax groups
-			comments = 'italic',	   -- Value is any valid attr-list value `:help attr-list`
+		styles = {
+			comments = 'italic',
 			functions = 'NONE',
 			keywords = 'NONE',
 			variables = 'NONE',
@@ -134,25 +134,27 @@ require('github-theme').setup({
 			strings = 'NONE',
 			types = 'bold',
 		},
-		inverse = {				   -- Inverse highlight for different types
+		inverse = {
 			match_paren = false,
 			visual = false,
 			search = false,
 		},
-		darken = {				   -- Darken floating windows and sidebar-like windows
+		darken = {
 			floats = true,
 			sidebars = {
 				enable = true,
-				list = {},			   -- Apply dark background to specific windows
+				list = {},
 			},
 		},
-		modules = {				   -- List of various plugins and additional options
-		-- ...
-		},
+		modules = {},
 	},
 	palettes = {},
 	specs = {},
-	groups = {},
+	groups = {
+		all = {
+			CursorLine = { bg = "#16181d" }, -- Replace with your preferred color
+		},
+	},
 })
 
 -- setup must be called before loading
