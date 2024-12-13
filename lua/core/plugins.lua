@@ -100,7 +100,6 @@ return require('packer').startup(function(use)
 			)
 		end
 	}
-	use {"navarasu/onedark.nvim"}
 	use({ 'rose-pine/neovim', as = 'rose-pine' })
 	use 'lewis6991/gitsigns.nvim'
 	use "lukas-reineke/indent-blankline.nvim"
@@ -112,8 +111,7 @@ return require('packer').startup(function(use)
 			require('live-server').setup()
 		end
 	}
-	use "rebelot/kanagawa.nvim"
-	use ({ 'projekt0n/github-nvim-theme' })
+
 	if packer_bootstrap then
 		require('packer').sync()
 	end
