@@ -111,7 +111,7 @@ require("rose-pine").setup({
 vim.cmd("colorscheme rose-pine")
 
 -- Customize the CursorLine color
-vim.api.nvim_set_hl(0, "CursorLine", { bg = "#1A1B20" })
+vim.api.nvim_set_hl(0, "CursorLine", { bg = "#22232A" })
 
 require('github-theme').setup({
 	options = {
