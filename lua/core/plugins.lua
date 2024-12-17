@@ -111,6 +111,10 @@ return require('packer').startup(function(use)
 			require('live-server').setup()
 		end
 	}
+	use {
+		'goolord/alpha-nvim',
+		requires = { 'nvim-tree/nvim-web-devicons' }
+	}
 
 	if packer_bootstrap then
 		require('packer').sync()
