@@ -51,7 +51,7 @@ dashboard.section.buttons.val = {
 }
 
 -- Footer (Custom Message)
-dashboard.section.footer.val = "Welcome JoyBoy"
+dashboard.section.footer.val = "Welcome cpt_n3m0"
 
 -- Setup Alpha
 alpha.setup(dashboard.config)
