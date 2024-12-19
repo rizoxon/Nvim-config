@@ -47,6 +47,9 @@ vim.cmd('highlight EndOfBuffer guifg=#14151A guibg=bg')
 vim.cmd([[highlight Whitespace guifg=#333333 guibg=NONE]])
 vim.cmd([[highlight Tab guifg=#ffffff guibg=NONE]])
 vim.cmd([[hi Folded gui=italic]])
+vim.api.nvim_set_hl(0, 'WinSeparator', { fg = '#333333', bg = 'NONE', bold = false })
+vim.api.nvim_set_hl(0, 'NvimTreeNormal', { bg = '#101014' })
+vim.api.nvim_set_hl(0, 'NvimTreeNormalNC', { bg = '#101014' })
 
 -- Key mappings
 local keymap = vim.keymap.set
