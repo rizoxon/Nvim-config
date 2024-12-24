@@ -19,13 +19,16 @@ vim.keymap.set('n', '<leader><leader>', function()
 	builtin.find_files(themes.get_dropdown({
 		width = 0.5,
 		previewer = false,
+		initial_mode = "normal",
 	}))
 end, {})
 
-vim.keymap.set('n', '<leader>fb', function()
+vim.keymap.set('n', '<leader>bb', function()
 	builtin.buffers(themes.get_dropdown({
 		width = 0.5,
 		previewer = false,
+		sort_mru = true,
+		initial_mode = "normal",
 	}))
 end, {})
 

@@ -144,6 +144,7 @@ return require('packer').startup(function(use)
 			)
 		end,
 	})
+	use { 'sphamba/smear-cursor.nvim', }
 
 	if packer_bootstrap then
 		require('packer').sync()
