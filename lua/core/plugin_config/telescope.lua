@@ -19,7 +19,6 @@ vim.keymap.set('n', '<leader><leader>', function()
 	builtin.find_files(themes.get_dropdown({
 		width = 0.5,
 		previewer = false,
-		initial_mode = "normal",
 	}))
 end, {})
 
