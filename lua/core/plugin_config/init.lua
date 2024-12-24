@@ -12,3 +12,13 @@ require("core.plugin_config.alpha")
 
 -- Intend blankline
 require("ibl").setup({ scope = {enabled = false} })
+
+-- Highlight on yank
+vim.api.nvim_create_autocmd("TextYankPost", {
+	callback = function()
+		vim.highlight.on_yank {
+			higroup = "IncSearch", -- You can use any highlight group
+			timeout = 200, -- Duration of the highlight in milliseconds
+		}
+	end,
+})
