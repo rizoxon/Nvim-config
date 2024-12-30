@@ -9,6 +9,16 @@ require('telescope').setup({
 			horizontal = { preview_width = 0.6, },
 			vertical = { preview_height = 0.4, },
 		},
+
+		vimgrep_arguments = {
+			'rg',
+			'--hidden',
+			'--no-heading',
+			'--with-filename',
+			'--line-number',
+			'--column',
+			'--case-sensitive'
+		}
 	},
 })
 
