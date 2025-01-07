@@ -13,16 +13,16 @@ require("rose-pine").setup({
 	styles = {
 		bold = false,
 		italic = true,
-		transparency = false,
+		transparency = true,
 	},
 })
 
 -- Load rose-pine theme
--- vim.cmd("colorscheme rose-pine")
--- vim.api.nvim_set_hl(0, "CursorLine", { bg = "#22232A" })
+vim.cmd("colorscheme rose-pine")
+vim.api.nvim_set_hl(0, "CursorLine", { bg = "#22232A" })
 
-require('onedark').setup({
-	comment_style = "italic",
-	function_style = "italic",
-	dark_float = true
-})
+-- require('onedark').setup({
+-- 	comment_style = "italic",
+-- 	function_style = "italic",
+-- 	dark_float = true
+-- })
