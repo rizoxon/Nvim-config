@@ -10,9 +10,6 @@ require("core.plugin_config.undotree")
 require("core.plugin_config.gitsigns")
 require("core.plugin_config.alpha")
 
--- Intend blankline
-require("ibl").setup({ scope = {enabled = false} })
-
 -- Highlight on yank
 vim.api.nvim_create_autocmd("TextYankPost", {
 	callback = function()

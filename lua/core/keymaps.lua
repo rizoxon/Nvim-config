@@ -19,9 +19,9 @@ vim.opt.guicursor = "n:block-blinkwait1000-blinkon500-blinkoff500"
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
 vim.opt.list = true
-vim.opt.listchars = { space = '·', tab = "│ " }
+vim.opt.listchars = { space = '·', tab = "  " }
 vim.opt.number = true
-vim.opt.relativenumber = true
+vim.opt.relativenumber = false
 vim.opt.title = true
 vim.opt.backup = false
 vim.opt.cmdheight = 0
@@ -54,7 +54,7 @@ local keymap = vim.keymap.set
 keymap('v', '<C-S-j>', ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
 keymap('v', '<C-S-k>', ":m '<-2<CR>gv=gv", { noremap = true, silent = true })
 keymap("n", "<leader>cs", ":nohlsearch<CR>")
-keymap("n", "<C-a>", "gg<S-v>G")
+-- keymap("n", "<C-a>", "gg<S-v>G")
 keymap("n", "ss", ":split<Return>", { noremap = true, silent = true })
 keymap("n", "sv", ":vsplit<Return>", { noremap = true, silent = true })
 keymap("n", "<C-h>", "<C-w>h")
