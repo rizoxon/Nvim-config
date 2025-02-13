@@ -19,7 +19,7 @@ vim.opt.guicursor = "n:block-blinkwait1000-blinkon500-blinkoff500"
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
 vim.opt.list = true
-vim.opt.listchars = { space = '·', tab = "| " }
+vim.opt.listchars = { space = '·', tab = " " }
 vim.opt.number = true
 vim.opt.relativenumber = false
 vim.opt.title = true
