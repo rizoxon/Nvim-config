@@ -8,9 +8,6 @@ define_sign('DiagnosticSignWarn', { text = '', texthl = 'DiagnosticSignWarn' 
 define_sign('DiagnosticSignInfo', { text = '', texthl = 'DiagnosticSignInfo' })
 define_sign('DiagnosticSignHint', { text = '', texthl = 'DiagnosticSignHint' })
 
---rename
-vim.keymap.set('x', '<leader>s', 'y:%s/<C-r>"//gc<left><left><left>', {noremap = true})
-
 -- Global options
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
@@ -74,3 +71,6 @@ keymap("i", "<C-c>", "<Esc>")
 
 -- Ensure proper file type encoding
 vim.opt.fileencodings = { "utf-8", "latin1" }
+
+--rename
+vim.keymap.set('x', '<leader>s', 'y:%s/<C-r>"//gc<left><left><left>', {noremap = true})
