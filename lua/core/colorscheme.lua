@@ -19,7 +19,7 @@ require("rose-pine").setup({
 
 -- Load rose-pine theme
 vim.cmd("colorscheme rose-pine")
-vim.api.nvim_set_hl(0, "CursorLine", { bg = "#22232A" })
+-- vim.api.nvim_set_hl(0, "CursorLine", { bg = "#22232A" })
 
 -- require('onedark').setup({
 -- 	comment_style = "italic",

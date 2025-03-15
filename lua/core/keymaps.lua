@@ -8,6 +8,9 @@ define_sign('DiagnosticSignWarn', { text = '', texthl = 'DiagnosticSignWarn' 
 define_sign('DiagnosticSignInfo', { text = '', texthl = 'DiagnosticSignInfo' })
 define_sign('DiagnosticSignHint', { text = '', texthl = 'DiagnosticSignHint' })
 
+--rename
+vim.keymap.set('x', '<leader>s', 'y:%s/<C-r>"//gc<left><left><left>', {noremap = true})
+
 -- Global options
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
@@ -26,7 +29,7 @@ vim.opt.title = true
 vim.opt.backup = false
 vim.opt.cmdheight = 0
 vim.opt.laststatus = 2
-vim.opt.scrolloff = 20
+vim.opt.scrolloff = 0
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.splitkeep = "cursor"
