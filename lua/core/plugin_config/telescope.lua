@@ -32,15 +32,6 @@ vim.keymap.set('n', '<leader><leader>', function()
 	}))
 end, {})
 
-vim.keymap.set('n', '<leader>bb', function()
-	builtin.buffers(themes.get_dropdown({
-		width = 0.5,
-		previewer = false,
-		sort_mru = true,
-		initial_mode = "normal",
-	}))
-end, {})
-
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-vim.keymap.set('n', '<leader>fm', builtin.marks, { desc = "Find marks" })
 vim.keymap.set('n', '<leader>gs', builtin.git_status, { desc = "Git status" })
+vim.keymap.set('n', '<leader>f', builtin.current_buffer_fuzzy_find, {})

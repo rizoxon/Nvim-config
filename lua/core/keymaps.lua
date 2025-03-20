@@ -21,7 +21,7 @@ vim.opt.fileencoding = "utf-8"
 vim.opt.list = true
 vim.opt.listchars = { space = '·', tab = " " }
 vim.opt.number = true
-vim.opt.relativenumber = false
+vim.opt.relativenumber = true
 vim.opt.title = true
 vim.opt.backup = false
 vim.opt.cmdheight = 0
