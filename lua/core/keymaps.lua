@@ -43,8 +43,8 @@ vim.opt.shiftround = true
 vim.opt.colorcolumn = "0"
 
 -- Highlight settings
-vim.cmd('highlight EndOfBuffer guifg=#14151A guibg=bg')
-vim.cmd([[highlight Whitespace guifg=#333333 guibg=NONE]])
+vim.cmd('highlight EndOfBuffer guifg=#15181a guibg=bg')
+vim.cmd([[highlight Whitespace guifg=#15181a guibg=NONE]])
 vim.cmd([[highlight Tab guifg=#ffffff guibg=NONE]])
 vim.cmd([[hi Folded gui=italic]])
 vim.api.nvim_set_hl(0, 'WinSeparator', { fg = '#333333', bg = 'NONE', bold = false })
