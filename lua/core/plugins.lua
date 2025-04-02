@@ -101,7 +101,7 @@ return require('packer').startup(function(use)
 		end
 	}
 	use({ 'rose-pine/neovim', as = 'rose-pine' })
-	use 'lewis6991/gitsigns.nvim'
+	use {'lewis6991/gitsigns.nvim', event = "BufReadPost"}
 	use {
 		'barrett-ruth/live-server.nvim',
 		build = 'pnpm add -g live-server',
