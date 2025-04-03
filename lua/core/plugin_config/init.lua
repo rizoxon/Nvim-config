@@ -9,6 +9,7 @@ require("core.plugin_config.fold")
 require("core.plugin_config.undotree")
 require("core.plugin_config.gitsigns")
 require("core.plugin_config.alpha")
+require("core.plugin_config.spectre")
 
 -- Highlight on yank
 vim.api.nvim_create_autocmd("TextYankPost", {

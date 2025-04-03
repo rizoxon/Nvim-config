@@ -145,6 +145,7 @@ return require('packer').startup(function(use)
 	})
 	use { 'sphamba/smear-cursor.nvim', }
 	use 'ful1e5/onedark.nvim'
+	use { 'nvim-pack/nvim-spectre', requires = { 'nvim-lua/plenary.nvim', 'BurntSushi/ripgrep' } }
 
 	if packer_bootstrap then
 		require('packer').sync()
