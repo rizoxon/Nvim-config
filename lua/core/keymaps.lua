@@ -34,7 +34,6 @@ vim.opt.backspace = "indent,eol,start"
 vim.opt.showcmd = true
 vim.opt.autowrite = true
 vim.opt.cursorline = true
-vim.api.nvim_set_hl(0, "CursorLine", { bg = "#000000" })
 vim.opt.autoread = true
 vim.opt.expandtab = false
 vim.opt.tabstop = 4
