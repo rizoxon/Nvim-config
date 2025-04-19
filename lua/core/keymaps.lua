@@ -15,7 +15,6 @@ vim.g.maplocalleader = " "
 -- Editor settings
 vim.opt.swapfile = false
 vim.opt.clipboard = "unnamedplus"
-vim.opt.guicursor = "n:block-blinkwait1000-blinkon500-blinkoff500"
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
 vim.opt.list = true
@@ -26,7 +25,7 @@ vim.opt.title = true
 vim.opt.backup = false
 vim.opt.cmdheight = 0
 vim.opt.laststatus = 2
-vim.opt.scrolloff = 0
+vim.opt.scrolloff = 10
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.splitkeep = "cursor"
@@ -41,6 +40,7 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.shiftround = true
 vim.opt.colorcolumn = "0"
+vim.o.guicursor = "n-v-c:block,i-ci-ve:ver25,r-cr-o:hor20"
 
 -- Highlight settings
 vim.cmd('highlight EndOfBuffer guifg=#15181a guibg=bg')
