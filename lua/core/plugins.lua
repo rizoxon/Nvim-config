@@ -146,6 +146,14 @@ return require('packer').startup(function(use)
 	use { 'sphamba/smear-cursor.nvim', }
 	use 'ful1e5/onedark.nvim'
 	use { 'nvim-pack/nvim-spectre', requires = { 'nvim-lua/plenary.nvim', 'BurntSushi/ripgrep' } }
+	use {
+		'zenbones-theme/zenbones.nvim',
+		requires = 'rktjmp/lush.nvim',
+		config = function()
+			vim.g.zenbones_darken_comments = 45
+			vim.g.zenbones_lightness = 'stark'
+		end
+	}
 
 	if packer_bootstrap then
 		require('packer').sync()

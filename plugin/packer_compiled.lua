@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/rizo/.cache/nvim/packer_hererocks/2.1.1692716794/share/lua/5.1/?.lua;/home/rizo/.cache/nvim/packer_hererocks/2.1.1692716794/share/lua/5.1/?/init.lua;/home/rizo/.cache/nvim/packer_hererocks/2.1.1692716794/lib/luarocks/rocks-5.1/?.lua;/home/rizo/.cache/nvim/packer_hererocks/2.1.1692716794/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/rizo/.cache/nvim/packer_hererocks/2.1.1692716794/lib/lua/5.1/?.so"
+local package_path_str = "/home/rizo/.cache/nvim/packer_hererocks/2.1.1741730670/share/lua/5.1/?.lua;/home/rizo/.cache/nvim/packer_hererocks/2.1.1741730670/share/lua/5.1/?/init.lua;/home/rizo/.cache/nvim/packer_hererocks/2.1.1741730670/lib/luarocks/rocks-5.1/?.lua;/home/rizo/.cache/nvim/packer_hererocks/2.1.1741730670/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/rizo/.cache/nvim/packer_hererocks/2.1.1741730670/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -75,7 +75,7 @@ time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["Comment.nvim"] = {
-    config = { "\27LJ\2\nç\1\0\0\4\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0025\3\n\0=\3\v\2B\0\2\1K\0\1\0\rmappings\1\0\2\nextra\2\nbasic\2\nextra\1\0\3\nbelow\bgco\beol\bgcA\nabove\bgcO\ropleader\1\0\2\nblock\agb\tline\agc\ftoggler\1\0\2\nblock\bgbc\tline\bgcc\1\0\2\fpadding\2\vsticky\2\nsetup\fComment\frequire\0" },
+    config = { "\27LJ\2\n¨\2\0\0\4\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0025\3\n\0=\3\v\2B\0\2\1K\0\1\0\rmappings\1\0\2\nextra\2\nbasic\2\nextra\1\0\3\nabove\bgcO\beol\bgcA\nbelow\bgco\ropleader\1\0\2\nblock\agb\tline\agc\ftoggler\1\0\2\nblock\bgbc\tline\bgcc\1\0\t\vsticky\2\14post_hook\0\nextra\0\ropleader\0\ftoggler\0\vignore\0\rpre_hook\0\fpadding\2\rmappings\0\nsetup\fComment\frequire\0" },
     loaded = true,
     path = "/home/rizo/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
@@ -139,6 +139,11 @@ _G.packer_plugins = {
     path = "/home/rizo/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["lush.nvim"] = {
+    loaded = true,
+    path = "/home/rizo/.local/share/nvim/site/pack/packer/start/lush.nvim",
+    url = "https://github.com/rktjmp/lush.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/home/rizo/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
@@ -150,7 +155,7 @@ _G.packer_plugins = {
     url = "https://github.com/williamboman/mason.nvim"
   },
   ["mini.surround"] = {
-    config = { "\27LJ\2\n–\2\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\rmappings\1\0\t\vdelete\asd\14highlight\ash\badd\asa\tfind\asf\16suffix_next\6n\16suffix_last\6l\19update_n_lines\asn\freplace\asr\14find_left\asF\1\0\5\18search_method\ncover\vsilent\1\23highlight_duration\3ô\3\27respect_selection_type\1\fn_lines\3\20\nsetup\18mini.surround\frequire\0" },
+    config = { "\27LJ\2\nµ\2\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\rmappings\1\0\t\14highlight\ash\16suffix_next\6n\16suffix_last\6l\freplace\asr\19update_n_lines\asn\tfind\asf\badd\asa\14find_left\asF\vdelete\asd\1\0\a\fn_lines\3\20\vsilent\1\18search_method\ncover\24custom_surroundings\0\23highlight_duration\3ô\3\rmappings\0\27respect_selection_type\1\nsetup\18mini.surround\frequire\0" },
     loaded = true,
     path = "/home/rizo/.local/share/nvim/site/pack/packer/start/mini.surround",
     url = "https://github.com/echasnovski/mini.surround"
@@ -242,18 +247,28 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/rizo/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
+  },
+  ["zenbones.nvim"] = {
+    config = { "\27LJ\2\nc\0\0\2\0\5\0\t6\0\0\0009\0\1\0)\1-\0=\1\2\0006\0\0\0009\0\1\0'\1\4\0=\1\3\0K\0\1\0\nstark\23zenbones_lightness\29zenbones_darken_comments\6g\bvim\0" },
+    loaded = true,
+    path = "/home/rizo/.local/share/nvim/site/pack/packer/start/zenbones.nvim",
+    url = "https://github.com/zenbones-theme/zenbones.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
 -- Config for: mini.surround
 time([[Config for mini.surround]], true)
-try_loadstring("\27LJ\2\n–\2\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\rmappings\1\0\t\vdelete\asd\14highlight\ash\badd\asa\tfind\asf\16suffix_next\6n\16suffix_last\6l\19update_n_lines\asn\freplace\asr\14find_left\asF\1\0\5\18search_method\ncover\vsilent\1\23highlight_duration\3ô\3\27respect_selection_type\1\fn_lines\3\20\nsetup\18mini.surround\frequire\0", "config", "mini.surround")
+try_loadstring("\27LJ\2\nµ\2\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\rmappings\1\0\t\14highlight\ash\16suffix_next\6n\16suffix_last\6l\freplace\asr\19update_n_lines\asn\tfind\asf\badd\asa\14find_left\asF\vdelete\asd\1\0\a\fn_lines\3\20\vsilent\1\18search_method\ncover\24custom_surroundings\0\23highlight_duration\3ô\3\rmappings\0\27respect_selection_type\1\nsetup\18mini.surround\frequire\0", "config", "mini.surround")
 time([[Config for mini.surround]], false)
 -- Config for: Comment.nvim
 time([[Config for Comment.nvim]], true)
-try_loadstring("\27LJ\2\nç\1\0\0\4\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0025\3\n\0=\3\v\2B\0\2\1K\0\1\0\rmappings\1\0\2\nextra\2\nbasic\2\nextra\1\0\3\nbelow\bgco\beol\bgcA\nabove\bgcO\ropleader\1\0\2\nblock\agb\tline\agc\ftoggler\1\0\2\nblock\bgbc\tline\bgcc\1\0\2\fpadding\2\vsticky\2\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+try_loadstring("\27LJ\2\n¨\2\0\0\4\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0025\3\n\0=\3\v\2B\0\2\1K\0\1\0\rmappings\1\0\2\nextra\2\nbasic\2\nextra\1\0\3\nabove\bgcO\beol\bgcA\nbelow\bgco\ropleader\1\0\2\nblock\agb\tline\agc\ftoggler\1\0\2\nblock\bgbc\tline\bgcc\1\0\t\vsticky\2\14post_hook\0\nextra\0\ropleader\0\ftoggler\0\vignore\0\rpre_hook\0\fpadding\2\rmappings\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
 time([[Config for Comment.nvim]], false)
+-- Config for: zenbones.nvim
+time([[Config for zenbones.nvim]], true)
+try_loadstring("\27LJ\2\nc\0\0\2\0\5\0\t6\0\0\0009\0\1\0)\1-\0=\1\2\0006\0\0\0009\0\1\0'\1\4\0=\1\3\0K\0\1\0\nstark\23zenbones_lightness\29zenbones_darken_comments\6g\bvim\0", "config", "zenbones.nvim")
+time([[Config for zenbones.nvim]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)

@@ -69,5 +69,10 @@ keymap("v", "<leader>p", "\"_dP")
 keymap("n", "<leader>t", ":set noexpandtab | retab!<CR>")
 keymap("i", "<C-c>", "<Esc>")
 
+-- Vertical jump
+keymap("n", "<C-d>", "<C-d>zz")
+keymap("n", "<C-u>", "<C-u>zz")
+keymap("n", "<C-b>", "<C-f>zz")
+
 -- Ensure proper file type encoding
 vim.opt.fileencodings = { "utf-8", "latin1" }

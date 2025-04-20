@@ -19,3 +19,6 @@ require("rose-pine").setup({
 
 -- Load rose-pine theme
 vim.cmd("colorscheme rose-pine")
+
+-- Load zenbone theme
+-- vim.cmd.colorscheme('zenbones')
