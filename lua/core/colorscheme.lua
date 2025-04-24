@@ -6,7 +6,6 @@ require("rose-pine").setup({
 
 	enable = {
 		terminal = false,
-		legacy_highlights = true,
 		migrations = true,
 	},
 
@@ -21,5 +20,9 @@ require("rose-pine").setup({
 vim.cmd("colorscheme rose-pine")
 vim.api.nvim_set_hl(0, 'CursorLine', { bg = '#181c1e' })
 
--- Load zenbone theme
--- vim.cmd.colorscheme('zenbones')
+-- Highlight settings
+vim.cmd('highlight EndOfBuffer guifg=#15181a guibg=bg')
+vim.cmd([[highlight Whitespace guifg=#15181a guibg=NONE]])
+vim.cmd([[highlight Tab guifg=#ffffff guibg=NONE]])
+vim.cmd([[hi Folded gui=italic]])
+vim.api.nvim_set_hl(0, 'WinSeparator', { fg = '#333333', bg = 'NONE', bold = false })

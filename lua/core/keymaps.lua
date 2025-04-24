@@ -42,13 +42,6 @@ vim.opt.shiftround = true
 vim.opt.colorcolumn = "0"
 vim.o.guicursor = "n-v-c:block,i-ci-ve:ver25,r-cr-o:hor20"
 
--- Highlight settings
-vim.cmd('highlight EndOfBuffer guifg=#15181a guibg=bg')
-vim.cmd([[highlight Whitespace guifg=#15181a guibg=NONE]])
-vim.cmd([[highlight Tab guifg=#ffffff guibg=NONE]])
-vim.cmd([[hi Folded gui=italic]])
-vim.api.nvim_set_hl(0, 'WinSeparator', { fg = '#333333', bg = 'NONE', bold = false })
-
 -- Key mappings
 local keymap = vim.keymap.set
 keymap('v', '<C-S-j>', ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
