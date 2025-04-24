@@ -31,7 +31,7 @@ require('lualine').setup {
 		lualine_c = {
 			{
 				'filename',
-				path = 3,
+				path = 0,
 			}
 		},
 		lualine_x = {'filetype'},
