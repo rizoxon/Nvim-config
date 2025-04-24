@@ -22,5 +22,16 @@ cmp.setup({
 		{ name = 'luasnip' },
 	}, {
 		{ name = 'buffer' },
-	})
+	}),
+
+	window = {
+		completion = {
+			border = 'rounded',  -- Rounded border for completion popup
+			winhighlight = 'Normal:Normal,FloatBorder:FloatBorder,CursorLine:CursorLine,Search:Search',  -- Optional: Customize highlight groups
+		},
+		documentation = {
+			border = 'rounded',  -- Rounded border for documentation popup
+			winhighlight = 'Normal:Normal,FloatBorder:FloatBorder,CursorLine:CursorLine,Search:Search',  -- Optional: Customize highlight groups
+		},
+	},
 })
