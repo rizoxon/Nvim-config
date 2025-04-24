@@ -154,6 +154,12 @@ return require('packer').startup(function(use)
 			vim.g.zenbones_lightness = 'stark'
 		end
 	}
+	use({
+		"folke/flash.nvim",
+		config = function()
+			require("flash").setup()
+		end,
+	})
 
 	if packer_bootstrap then
 		require('packer').sync()
