@@ -72,7 +72,7 @@ vim.opt.fileencodings = { "utf-8", "latin1" }
 
 
 -- Flash
-vim.keymap.set({"n", "x", "o"}, "/", function() require("flash").jump() end, { desc = "Flash Search" })
+vim.keymap.set({"n", "x", "o"}, "<C-s>", function() require("flash").jump() end, { desc = "Flash Search" })
 vim.keymap.set({"n", "x", "o"}, "?", function() require("flash").treesitter() end, { desc = "Flash treesitter" })
 
 
