@@ -75,7 +75,7 @@ time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["Comment.nvim"] = {
-    config = { "\27LJ\2\n¨\2\0\0\4\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0025\3\n\0=\3\v\2B\0\2\1K\0\1\0\rmappings\1\0\2\nextra\2\nbasic\2\nextra\1\0\3\nbelow\bgco\beol\bgcA\nabove\bgcO\ropleader\1\0\2\nblock\agb\tline\agc\ftoggler\1\0\2\nblock\bgbc\tline\bgcc\1\0\t\rmappings\0\fpadding\2\ropleader\0\rpre_hook\0\vsticky\2\nextra\0\14post_hook\0\ftoggler\0\vignore\0\nsetup\fComment\frequire\0" },
+    config = { "\27LJ\2\n¨\2\0\0\4\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0025\3\n\0=\3\v\2B\0\2\1K\0\1\0\rmappings\1\0\2\nbasic\2\nextra\2\nextra\1\0\3\beol\bgcA\nbelow\bgco\nabove\bgcO\ropleader\1\0\2\tline\agc\nblock\agb\ftoggler\1\0\2\tline\bgcc\nblock\bgbc\1\0\t\rpre_hook\0\ropleader\0\nextra\0\14post_hook\0\ftoggler\0\vignore\0\vsticky\2\fpadding\2\rmappings\0\nsetup\fComment\frequire\0" },
     loaded = true,
     path = "/home/rizo/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
@@ -156,7 +156,7 @@ _G.packer_plugins = {
     url = "https://github.com/williamboman/mason.nvim"
   },
   ["mini.surround"] = {
-    config = { "\27LJ\2\nµ\2\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\rmappings\1\0\t\19update_n_lines\asn\freplace\asr\16suffix_next\6n\16suffix_last\6l\14highlight\ash\tfind\asf\14find_left\asF\badd\asa\vdelete\asd\1\0\a\rmappings\0\27respect_selection_type\1\fn_lines\3\20\24custom_surroundings\0\18search_method\ncover\vsilent\1\23highlight_duration\3ô\3\nsetup\18mini.surround\frequire\0" },
+    config = { "\27LJ\2\nµ\2\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\rmappings\1\0\t\freplace\asr\badd\asa\19update_n_lines\asn\14find_left\asF\tfind\asf\vdelete\asd\16suffix_next\6n\16suffix_last\6l\14highlight\ash\1\0\a\23highlight_duration\3ô\3\rmappings\0\27respect_selection_type\1\fn_lines\3\20\24custom_surroundings\0\18search_method\ncover\vsilent\1\nsetup\18mini.surround\frequire\0" },
     loaded = true,
     path = "/home/rizo/.local/share/nvim/site/pack/packer/start/mini.surround",
     url = "https://github.com/echasnovski/mini.surround"
@@ -249,42 +249,47 @@ _G.packer_plugins = {
     path = "/home/rizo/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
-  ["vague.nvim"] = {
+  ["zen-mode.nvim"] = {
+    config = { "\27LJ\2\n­\3\0\0\5\0\17\0\0216\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\0025\3\t\0005\4\b\0=\4\5\0035\4\n\0=\4\v\0035\4\f\0=\4\r\0035\4\14\0=\4\15\3=\3\16\2B\0\2\1K\0\1\0\fplugins\ttmux\1\0\1\fenabled\1\rgitsigns\1\0\1\fenabled\1\rtwilight\1\0\1\fenabled\2\1\0\4\foptions\0\ttmux\0\rtwilight\0\rgitsigns\0\1\0\3\nruler\1\fenabled\2\fshowcmd\1\vwindow\1\0\2\fplugins\0\vwindow\0\foptions\1\0\6\15cursorline\1\15signcolumn\ano\vnumber\1\15foldcolumn\0060\17cursorcolumn\1\19relativenumber\1\1\0\4\vheight\4Í™³æ\fÌ™³ÿ\3\foptions\0\rbackdrop\4æÌ™³\6æÌ¹ÿ\3\nwidth\4Í™³æ\fÌ™³ÿ\3\nsetup\rzen-mode\frequire\0" },
     loaded = true,
-    path = "/home/rizo/.local/share/nvim/site/pack/packer/start/vague.nvim",
-    url = "https://github.com/vague2k/vague.nvim"
+    path = "/home/rizo/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",
+    url = "https://github.com/folke/zen-mode.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\n¨\2\0\0\4\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0025\3\n\0=\3\v\2B\0\2\1K\0\1\0\rmappings\1\0\2\nbasic\2\nextra\2\nextra\1\0\3\beol\bgcA\nbelow\bgco\nabove\bgcO\ropleader\1\0\2\tline\agc\nblock\agb\ftoggler\1\0\2\tline\bgcc\nblock\bgbc\1\0\t\rpre_hook\0\ropleader\0\nextra\0\14post_hook\0\ftoggler\0\vignore\0\vsticky\2\fpadding\2\rmappings\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
+-- Config for: mini.surround
+time([[Config for mini.surround]], true)
+try_loadstring("\27LJ\2\nµ\2\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\rmappings\1\0\t\freplace\asr\badd\asa\19update_n_lines\asn\14find_left\asF\tfind\asf\vdelete\asd\16suffix_next\6n\16suffix_last\6l\14highlight\ash\1\0\a\23highlight_duration\3ô\3\rmappings\0\27respect_selection_type\1\fn_lines\3\20\24custom_surroundings\0\18search_method\ncover\vsilent\1\nsetup\18mini.surround\frequire\0", "config", "mini.surround")
+time([[Config for mini.surround]], false)
 -- Config for: flash.nvim
 time([[Config for flash.nvim]], true)
 try_loadstring("\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\nflash\frequire\0", "config", "flash.nvim")
 time([[Config for flash.nvim]], false)
--- Config for: mini.surround
-time([[Config for mini.surround]], true)
-try_loadstring("\27LJ\2\nµ\2\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\rmappings\1\0\t\19update_n_lines\asn\freplace\asr\16suffix_next\6n\16suffix_last\6l\14highlight\ash\tfind\asf\14find_left\asF\badd\asa\vdelete\asd\1\0\a\rmappings\0\27respect_selection_type\1\fn_lines\3\20\24custom_surroundings\0\18search_method\ncover\vsilent\1\23highlight_duration\3ô\3\nsetup\18mini.surround\frequire\0", "config", "mini.surround")
-time([[Config for mini.surround]], false)
--- Config for: Comment.nvim
-time([[Config for Comment.nvim]], true)
-try_loadstring("\27LJ\2\n¨\2\0\0\4\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0025\3\n\0=\3\v\2B\0\2\1K\0\1\0\rmappings\1\0\2\nextra\2\nbasic\2\nextra\1\0\3\nbelow\bgco\beol\bgcA\nabove\bgcO\ropleader\1\0\2\nblock\agb\tline\agc\ftoggler\1\0\2\nblock\bgbc\tline\bgcc\1\0\t\rmappings\0\fpadding\2\ropleader\0\rpre_hook\0\vsticky\2\nextra\0\14post_hook\0\ftoggler\0\vignore\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
-time([[Config for Comment.nvim]], false)
+-- Config for: zen-mode.nvim
+time([[Config for zen-mode.nvim]], true)
+try_loadstring("\27LJ\2\n­\3\0\0\5\0\17\0\0216\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\0025\3\t\0005\4\b\0=\4\5\0035\4\n\0=\4\v\0035\4\f\0=\4\r\0035\4\14\0=\4\15\3=\3\16\2B\0\2\1K\0\1\0\fplugins\ttmux\1\0\1\fenabled\1\rgitsigns\1\0\1\fenabled\1\rtwilight\1\0\1\fenabled\2\1\0\4\foptions\0\ttmux\0\rtwilight\0\rgitsigns\0\1\0\3\nruler\1\fenabled\2\fshowcmd\1\vwindow\1\0\2\fplugins\0\vwindow\0\foptions\1\0\6\15cursorline\1\15signcolumn\ano\vnumber\1\15foldcolumn\0060\17cursorcolumn\1\19relativenumber\1\1\0\4\vheight\4Í™³æ\fÌ™³ÿ\3\foptions\0\rbackdrop\4æÌ™³\6æÌ¹ÿ\3\nwidth\4Í™³æ\fÌ™³ÿ\3\nsetup\rzen-mode\frequire\0", "config", "zen-mode.nvim")
+time([[Config for zen-mode.nvim]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
-pcall(vim.api.nvim_create_user_command, 'LiveServerStop', function(cmdargs)
-          require('packer.load')({'live-server.nvim'}, { cmd = 'LiveServerStop', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
-        end,
-        {nargs = '*', range = true, bang = true, complete = function()
-          require('packer.load')({'live-server.nvim'}, {}, _G.packer_plugins)
-          return vim.fn.getcompletion('LiveServerStop ', 'cmdline')
-      end})
 pcall(vim.api.nvim_create_user_command, 'LiveServerStart', function(cmdargs)
           require('packer.load')({'live-server.nvim'}, { cmd = 'LiveServerStart', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
         end,
         {nargs = '*', range = true, bang = true, complete = function()
           require('packer.load')({'live-server.nvim'}, {}, _G.packer_plugins)
           return vim.fn.getcompletion('LiveServerStart ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'LiveServerStop', function(cmdargs)
+          require('packer.load')({'live-server.nvim'}, { cmd = 'LiveServerStop', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'live-server.nvim'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('LiveServerStop ', 'cmdline')
       end})
 time([[Defining lazy-load commands]], false)
 

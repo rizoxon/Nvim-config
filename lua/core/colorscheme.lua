@@ -16,11 +16,9 @@ require("rose-pine").setup({
 	},
 })
 
--- Load rose-pine theme
 vim.cmd("colorscheme rose-pine")
-vim.api.nvim_set_hl(0, 'CursorLine', { bg = '#181c1e' })
 
--- Highlight settings
+vim.api.nvim_set_hl(0, 'CursorLine', { bg = '#181c1e' })
 vim.cmd('highlight EndOfBuffer guifg=#15181a guibg=bg')
 vim.cmd([[highlight Whitespace guifg=#15181a guibg=NONE]])
 vim.cmd([[highlight Tab guifg=#ffffff guibg=NONE]])

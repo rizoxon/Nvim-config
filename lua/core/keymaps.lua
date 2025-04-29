@@ -78,3 +78,6 @@ vim.keymap.set({"n", "x", "o"}, "?", function() require("flash").treesitter() en
 
 -- Norm mode
 vim.keymap.set("v", "<leader>n", ":norm ", { noremap = true })
+
+-- Zen
+vim.keymap.set("n", "<leader>z", function() require("zen-mode").toggle() end)

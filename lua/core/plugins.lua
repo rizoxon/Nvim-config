@@ -152,8 +152,37 @@ return require('packer').startup(function(use)
 			require("flash").setup()
 		end,
 	})
-	use {"vague2k/vague.nvim"}
 
+	use({
+		"folke/zen-mode.nvim",
+		config = function()
+			require("zen-mode").setup({
+				window = {
+					backdrop = 0.95, -- slight dimming of background
+					width = 0.9,      -- keep it narrow
+					height = 0.9,    -- don't cut off vertical space
+					options = {
+						signcolumn = "no",
+						number = false,
+						relativenumber = false,
+						cursorline = false,
+						cursorcolumn = false,
+						foldcolumn = "0",
+					},
+				},
+				plugins = {
+					options = {
+						enabled = true,
+						ruler = false,
+						showcmd = false,
+					},
+					twilight = { enabled = true }, -- optionally dim out non-focused code
+					gitsigns = { enabled = false },
+					tmux = { enabled = false },
+				},
+			})
+		end
+	})
 	if packer_bootstrap then
 		require('packer').sync()
 	end
